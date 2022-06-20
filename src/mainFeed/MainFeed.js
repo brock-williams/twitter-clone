@@ -1,5 +1,7 @@
 import React from 'react'
 import './mainFeed.css'
+import TweetBox from './tweet/TweetBox'
+import Tweet from './tweet/Tweet'
 
 function mainFeed() {
   return (
@@ -9,12 +11,9 @@ function mainFeed() {
 
       </div>
 
-        {/* Tweet Box */}
+        <TweetBox/>
 
-        {/* Actual Feed */}
-
-
-
+        <Tweet/>
     </div>
   )
 }

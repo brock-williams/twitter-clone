@@ -1,0 +1,40 @@
+.tweet {
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1 px solid var(--white-bg);
+    padding-bottom: 10px;
+}
+
+.tweetBody > img {
+    border-radius: 20px;
+    
+}
+
+.tweetFooter {
+    display: flex;
+    justify-content: space-inbetween;
+    margin-top: 10px;
+
+}
+
+
+.tweetBadge {
+    font-size: 14px !important;
+    color: var(--main-bg)
+}
+
+.tweetHeaderSpecial {
+    font-weight: 600;
+    font-size: 12px;
+    color: gray;
+}
+
+.tweetHeaderDesc{
+    font-size: 10px;
+    margin-bottom: 15px;
+}
+
+.tweetHeaderText > h3 {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
