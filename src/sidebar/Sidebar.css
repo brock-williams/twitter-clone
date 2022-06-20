@@ -1,0 +1,27 @@
+.sidebar {
+    border-right: 1px solid var(rgb(59, 58, 58));
+    flex: 0.3;
+    min-width: 250px;
+    margin-top: 20px;
+    padding-left: 30px;
+    padding-right: 20px;
+}
+
+.tweet {
+    background-color: var(--main-color) !important;
+    border: none !important;
+    color: white !important;
+    font-weight: 700 !important;
+    text-transform: inherit !important;
+    border-radius: 50px !important;
+    height: 50 px !important;
+    margin-top: 20px !important;
+    /* Must use !important to override MUI default styles*/
+}
+
+.twitterIcon {
+    color: var(--main-color);
+    font-size: 30px !important;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
