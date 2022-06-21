@@ -26,7 +26,7 @@ function Tweet({
             <h3>
               Brock Williams{" "}
               <span className="tweet_HeaderSpecial">
-                <VerifiedIcon className="tweet_Badge"/> @ {username}
+                <VerifiedIcon className="tweet_Badge"/> @brockwill1
               </span>
             </h3>
           </div>
@@ -36,12 +36,12 @@ function Tweet({
             </p>
           </div>
         </div>
-        <img src="https://www.mintface.xyz/content/images/2021/08/QmTndiF423kjdXsNzsip1QQkBQqDuzDhJnGuJAXtv4XXiZ-1.png" alt=""/>
+        <img src="" alt=""/>
         <div className="tweet_Footer">
-          <ChatBubbleOutlineIcon fontSize="small" />
-          <RepeatOneIcon fontSize="small"/>
-          <FavoriteBorderIcon fontSize="small"/>
-          <PublishIcon fontSize="small"/>
+          <ChatBubbleOutlineIcon className="comment" fontSize="small" />
+          <RepeatOneIcon className="retweet" fontSize="small"/>
+          <FavoriteBorderIcon className="like" fontSize="small"/>
+          <PublishIcon className="dm_post" fontSize="small"/>
         </div>
       </div>
     </div>

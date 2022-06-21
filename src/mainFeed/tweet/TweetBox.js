@@ -1,7 +1,9 @@
 import React from 'react'
 import './TweetBox.css';
+import PermMediaIcon from '@mui/icons-material/PermMedia';
 import { Button } from '@mui/material';
 import { Avatar } from '@mui/material';
+
 
 function TweetBox() {
   return (
@@ -12,6 +14,7 @@ function TweetBox() {
             </div>
                 <input placeholder="What's happening?" type="text"></input>
             </div>
+            <PermMediaIcon  className="mediaIcon"/>
             <input className="imageURL" placeholder="Enter Image URL" type="text"></input>
             <Button className="tweetBoxButton">Tweet</Button>
         </form>
