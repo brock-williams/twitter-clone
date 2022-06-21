@@ -27,7 +27,7 @@ function Sidebar() {
         <SidebarProps text="Profile" Icon={PermIdentityIcon}/>
         <SidebarProps text="More" Icon={MoreHorizIcon}/>
     
-        <Button variant="outlined" className="tweet" fullWidth>Tweet</Button>
+        <Button variant="outlined" className="tweetButton" fullWidth>Tweet</Button>
     
     </div>
   )

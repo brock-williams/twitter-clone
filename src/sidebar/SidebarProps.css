@@ -1,26 +1,26 @@
-.sidebarProps {
+.SidebarProps {
     display: flex;
     align-items: center;
     cursor: pointer;
 }
 
-.sidebarProps:hover {
+.SidebarProps:hover {
     background-color: var(--white-bg);
     border-radius: 30px;
-    color: var(--main-color);
+    color: var(--twitter);
     transition: color 100ms ease-out;
 }
 
-.sidebarProps > .MuiSvgIcon-root {
+.SidebarProps > .MuiSvgIcon-root {
     padding: 20px;
 }
 
-.sidebarProps > h2 {
+.SidebarProps > h2 {
     font-weight: 400;
     font-size: 20 px;
     margin-right: 20px;
 }
 
-.sidebarProps--active {
-    color: var(--main-color);
+.SidebarProps--active {
+    color: var(--twitter);
 }

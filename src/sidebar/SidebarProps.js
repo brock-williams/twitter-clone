@@ -4,8 +4,7 @@ import './SidebarProps.css'
 
 function SidebarProps({active, text, Icon}) {
   return (
-    <div className={`sidebarProps ${active && "sidebarProps--active"}`}>
-        
+    <div className={`SidebarProps ${active && "sidebarProps--active"}`}>
         <Icon />
         <h2>{text}</h2>
 
