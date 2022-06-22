@@ -13,30 +13,31 @@ function Tweet({
   verified,
   text,
   image,
-  avatar
+  avatar,
+  time
 }) {
   return (
     <div className="tweet">
       <div className="tweet_Avatar">
-        <Avatar src="https://www.pajiba.com/assets_c/2021/07/ted-lasso-cheers-george-wendt-thumb-700xauto-237052.jpeg"/>
+        <Avatar src={avatar}/>
       </div>
       <div className="tweet_Body">
         <div className="tweet_Header">
           <div className="tweet_HeaderText">
             <h3>
-              Brock Williams{" "}
+              {displayName}{" "}
               <span className="tweet_HeaderSpecial">
-                <VerifiedIcon className="tweet_Badge"/> @brockwill1
+                {verified && <VerifiedIcon className="tweet_Badge"/>} @{username}
               </span>
             </h3>
           </div>
           <div className="tweet_HeaderDesc">
             <p>
-              Currently making Twitter... hold up
+              {text}
             </p>
           </div>
         </div>
-        <img src="" alt=""/>
+        <img src={image} alt=""/>
         <div className="tweet_Footer">
           <ChatBubbleOutlineIcon className="comment" fontSize="small" />
           <RepeatOneIcon className="retweet" fontSize="small"/>
