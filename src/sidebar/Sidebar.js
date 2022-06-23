@@ -5,8 +5,8 @@ import HomeIcon from '@mui/icons-material/Home';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import TagIcon from '@mui/icons-material/Tag';
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
-import MailIcon from '@mui/icons-material/Mail';
-import BookmarkIcon from '@mui/icons-material/Bookmark';
+import MailOutlinedIcon from '@mui/icons-material/MailOutlined';
+import BookmarkBorderOutlinedIcon from '@mui/icons-material/BookmarkBorderOutlined';
 import ListAltIcon from '@mui/icons-material/ListAlt';
 import PermIdentityIcon from '@mui/icons-material/PermIdentity';
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
@@ -21,8 +21,8 @@ function Sidebar() {
         <SidebarProps text="Home" active Icon={HomeIcon} className="homeIcon"/>
         <SidebarProps text="Explore" Icon={TagIcon}/>
         <SidebarProps text="Notifications" Icon={NotificationsNoneIcon}/>
-        <SidebarProps text="Messages" Icon={MailIcon}/>
-        <SidebarProps text="Bookmarks" Icon={BookmarkIcon}/>
+        <SidebarProps text="Messages" Icon={MailOutlinedIcon}/>
+        <SidebarProps text="Bookmarks" Icon={BookmarkBorderOutlinedIcon}/>
         <SidebarProps text="Lists" Icon={ListAltIcon}/>
         <SidebarProps text="Profile" Icon={PermIdentityIcon}/>
         <SidebarProps text="More" Icon={MoreHorizIcon}/>

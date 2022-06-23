@@ -2,7 +2,7 @@ import './App.css';
 import Sidebar from './sidebar/Sidebar';
 import MainFeed from './mainFeed/MainFeed';
 import RightSide from './rightSide/RightSide';
-
+import Login from './login/Login';
 
 function App() {
   return (
@@ -12,6 +12,10 @@ function App() {
       <MainFeed/>
 
       <RightSide/>
+
+      {/* <Login/> */}
+
+
     </div>
   );
 }
