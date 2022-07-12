@@ -9,4 +9,4 @@ I did this project to start learning web development and to get an understand of
 
 ## Why Google Firebase?
 
-I didn't know which cloud service I wanted to use for my back-end, but obviously I ended up choosing Google Firebase. I chose it because of its extreme simplicity, and easy to use/read syntax. Setting up the Firehouse database was so easy, and above it all I can host this website for FREE!
+I didn't know which cloud service I wanted to use for my back-end, but obviously I ended up choosing Google Firebase. I chose it because of its extreme simplicity, and easy to use/read syntax/documentation. Setting up the Firehouse database was so easy, and above it all I can host this website for FREE!
