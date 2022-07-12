@@ -29,6 +29,7 @@ function MainFeed() {
       
         {tweets.map((tweet) => (
       <Tweet
+      key={tweet.text}
       displayName={tweet.displayName}
       username={tweet.username}
       verified={tweet.verified}
@@ -43,4 +44,4 @@ function MainFeed() {
   )
 }
 
-export default MainFeed
+export default MainFeed;

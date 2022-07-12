@@ -1,20 +1,18 @@
 import './App.css';
-import Sidebar from './sidebar/Sidebar';
-import MainFeed from './mainFeed/MainFeed';
-import RightSide from './rightSide/RightSide';
+import Home from './Home';
 import Login from './login/Login';
+import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
 
 function App() {
   return (
     <div className="app">
-      <Sidebar/>
-      
-      <MainFeed/>
-
-      <RightSide/>
-
-      {/* <Login/> */}
-
+      <Router>
+        <Routes>
+          <Route path="/login" element={<Login/>}/>
+          <Route path="/home" element={<Home/>}/>
+          <Route path="/profile"/>
+        </Routes>
+      </Router>
 
     </div>
   );

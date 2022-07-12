@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import './Tweet.css';
 import VerifiedIcon from '@mui/icons-material/Verified';
 import ChatBubbleOutlineIcon from '@mui/icons-material/ChatBubbleOutline';
@@ -7,7 +7,8 @@ import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import PublishIcon from '@mui/icons-material/Publish';
 import { Avatar } from '@mui/material';
 
-function Tweet({
+const Tweet = forwardRef(
+  ({
   displayName,
   username,
   verified,
@@ -15,9 +16,9 @@ function Tweet({
   image,
   avatar,
   time
-}) {
+}, ref) => {
   return (
-    <div className="tweet">
+    <div className="tweet" ref={ref}>
       <div className="tweet_Avatar">
         <Avatar src={avatar}/>
       </div>
@@ -46,7 +47,8 @@ function Tweet({
         </div>
       </div>
     </div>
-  )
+  );
 }
+);
 
-export default Tweet
+export default Tweet;
