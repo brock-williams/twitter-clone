@@ -1,7 +1,9 @@
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 import { initializeApp } from "firebase/app";
 import { getFirestore } from 'firebase/firestore/lite';
-import { confirmPasswordReset, getAuth, GoogleAuthProvider, signInWithPopup } from 'firebase/auth'
+import { getAuth, GoogleAuthProvider, signInWithPopup } from 'firebase/auth'
+import { useNavigate } from 'react-router-dom';
+
 
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
@@ -16,18 +18,19 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
-
 const db = getFirestore(app);
-
 const provider = new GoogleAuthProvider()
 
-export const signInGoogle= () => {
+ const signInGoogle= () => {
   signInWithPopup(auth, provider)
   .then((result) => {
     const name = result.user.displayName;
     const email = result.user.email;
     const pfp = result.user.photoURL;
+    const navigate = useNavigate();
+    navigate('/');
 
+    
   }).catch((error) => console.log(error));
 };
 

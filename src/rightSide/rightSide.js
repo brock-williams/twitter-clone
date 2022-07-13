@@ -21,7 +21,7 @@ function RightSide() {
 
         <TwitterTimelineEmbed 
           sourceType='profile'
-          screenName='rashjichords'
+          screenName='brockwilliams37'
           options={{height: 400}}/>
 
         <TwitterShareButton

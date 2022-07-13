@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import SidebarProps from './SidebarProps'
 import './Sidebar.css'
 import HomeIcon from '@mui/icons-material/Home';
@@ -11,12 +11,24 @@ import ListAltIcon from '@mui/icons-material/ListAlt';
 import PermIdentityIcon from '@mui/icons-material/PermIdentity';
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 import { Button } from '@mui/material';
+import {auth} from '../mainFeed/firebase';
+import {signOut} from "firebase/auth";
+import { useNavigate } from "react-router-dom";
 
 
 function Sidebar() {
+
+  const navigate = useNavigate();
+
+  const logout = async () => {
+    await signOut(auth);
+    navigate('/login')
+    
+  };
+
   return (
     <div className="sidebar">
-        <TwitterIcon onClick={event => window.location.href='http://localhost:3000'} className="twitterIcon"/>
+        <TwitterIcon onClick={navigate('/home')} className="twitterIcon"/>
         <SidebarProps text="Home" active Icon={HomeIcon} className="homeIcon"/>
         <SidebarProps text="Explore" Icon={TagIcon}/>
         <SidebarProps text="Notifications" Icon={NotificationsNoneIcon}/>
@@ -27,6 +39,7 @@ function Sidebar() {
         <SidebarProps text="More" Icon={MoreHorizIcon}/>
     
         <Button variant="outlined" className="tweetButton" fullWidth>Tweet</Button>
+        <Button variant="outlined" className="signOutBtn" fullWidth onClick={logout}>Sign Out</Button>
     
     </div>
   )

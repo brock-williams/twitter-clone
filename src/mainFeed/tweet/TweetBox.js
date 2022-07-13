@@ -5,33 +5,30 @@ import { Button } from '@mui/material';
 import { Avatar } from '@mui/material';
 import db from '../firebase';
 import { addDoc, collection, onSnapshot, orderBy, query, serverTimestamp } from "firebase/firestore"; 
+import {auth} from '../firebase';
+import { getAuth } from 'firebase/auth';
 
 function TweetBox() {
   const [tweetMessage, sendTweetMessage] = useState("");
   const [tweetImage, sendTweetImage] = useState("");
-
+  
 
   const sendTweet = (e) => {
     // const collectionRef = collection(db, "tweets");
     // const q = query(collectionRef, orderBy("timestamp", "desc"));
 
     e.preventDefault();
-
+    
       addDoc(collection(db, "tweets"), {
       displayName: "Brock Williams",
       username: "brockwill1",
       verified: true,
       text: tweetMessage,
       image: tweetImage,
-      avatar: "https://pbs.twimg.com/profile_images/1512303881400766466/ZN9BJHdc_400x400.jpg",
+      avatar: "",
       timestamp: serverTimestamp()
 
     });
-
-    db.collection('tweets').orderBy('timestamp');
-
-    // const send = onSnapshot(q, (snapshot) => 
-    // sendTweetMessage(snapshot.docs.map((doc) => ({...doc.data(), id: doc.id}))));
 
     sendTweetMessage("");
     sendTweetImage("");
@@ -39,11 +36,12 @@ function TweetBox() {
   };
 
 
+
   return (
     <div className="tweetBox">
         <form>
             <div className="tweetInput">
-            <div> <Avatar src="https://pbs.twimg.com/profile_images/1512303881400766466/ZN9BJHdc_400x400.jpg"/>
+            <div> <Avatar src={"avatar"}/>
             </div>
                 <input
                 onChange={(e) => sendTweetMessage(e.target.value)}
@@ -66,4 +64,5 @@ function TweetBox() {
 export const reorder = () => {
   db.collection('tweets').orderBy('timestamp');
 }
-export default TweetBox
+
+export default TweetBox;

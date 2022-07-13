@@ -1,9 +1,9 @@
 .loginBody {
-    background-size: cover;
     width: 100%;
-    background-color: #999999;
     margin: 0px;
     padding: 0px;
+    height: '100vh';
+    
 }
 
 .loginTwitterIcon {
@@ -17,9 +17,10 @@
     height: 650px;
     margin: auto;
     margin-top: 50px;
-    background-color: white;
     border-radius: 5%;
-    
+    background-color: #F5F5F5	;
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, .04), 0 2px 4px rgba(0, 0, 0, .25);
+
 }
 
 .loginEmail {
@@ -82,32 +83,7 @@
     border: 1px solid #eee;
 }
 
-.registerEmail {
-    padding: 15px;
-    margin-top: 20px;
-    border-radius:10px;
-    border: 1px solid #eee;
-    transition: .3s;
-
-}
-
-.registerEmail:hover {
-    box-shadow: 0 -1px 0 rgba(0, 0, 0, .04), 0 2px 4px rgba(0, 0, 0, .25);
-}
-
-.registerPass {
-    padding: 15px;
-    margin-top: 20px;
-    border-radius:10px;
-    border: 1px solid #eee;
-    transition: .3s;
-
-}
-
-.registerPass:hover {
-    box-shadow: 0 -1px 0 rgba(0, 0, 0, .04), 0 2px 4px rgba(0, 0, 0, .25);
-}
-    .login-with-google-btn:hover {
+.login-with-google-btn:hover {
     box-shadow: 0 -1px 0 rgba(0, 0, 0, .04), 0 2px 4px rgba(0, 0, 0, .25);
     }
 
@@ -123,6 +99,20 @@
     0 0 0 3px #c8dafc;
     }
 
+
+.createUserBtn {
+    margin-top: 30px;
+    cursor: pointer;
+    width: 190px;
+    border-radius: 20px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.createUserBtn:hover {
+    background-color: lightgray;
+    transition: 0.3s;
+}
 
 .loginBody {
     text-align: center;
