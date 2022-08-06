@@ -1,4 +1,4 @@
-# Brock's Twitter Clone
+# Brock's Twitter Clone (!! I made it SIMILAR looking, so it will not look exactly the same as Twitter).
 
 ![image](https://user-images.githubusercontent.com/99462184/175136249-2b90bdd6-5789-41b8-9d45-572480323f9c.png)
 
