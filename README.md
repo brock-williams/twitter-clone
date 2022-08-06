@@ -34,3 +34,12 @@ Above I talked about what I learned and I mentioned there are a lot of things I 
 # DEMO
 
 https://user-images.githubusercontent.com/99462184/183235888-5ad92175-5134-4c3a-bc1c-d48794159007.mp4
+
+# Real Twitter login vs My Clone's Login
+
+https://user-images.githubusercontent.com/99462184/183264766-8d8d0917-3b60-499e-8c48-be105bb89cf3.mp4
+
+# Real Twitter Home vs My Clone's Home
+
+https://user-images.githubusercontent.com/99462184/183264780-568190c1-1fd4-49e2-9462-83606310108a.mp4
+
