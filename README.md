@@ -4,6 +4,9 @@
 
 ## I made this project SIMILAR looking, so it will not look exactly the same as Twitter
 
+## Project Overview
+
+I knew I wanted to make a fullstack social media clone of some sort, so I decided to choose my favorite one: Twitter. My Twitter clone has a login/signup page for user authentication, and once they sign in they are directed to the home page. The user can post a tweet which will appear in the timeline! The demo below shows an example of all of that
 ## Why React?
 
 I did this project to start learning web development and to get an understand of JS/CSS/HTML as a whole. I decided to pick an opensourced JS library, and I was between Angular and React. I decided to choose React because I found it to be more intuitive, and I feel it could've been more applicable to my future jobs!
