@@ -10,3 +10,14 @@ I did this project to start learning web development and to get an understand of
 ## Why Google Firebase?
 
 I didn't know which cloud service I wanted to use for my back-end, but obviously I ended up choosing Google Firebase. I chose it because of its extreme simplicity, and easy to use/read syntax/documentation. Setting up the Firehouse database was so easy, and above it all I can host this website for FREE!
+
+## What I leanred
+
+I feel like I learned a lot from this project, with it being my first time ever using React, as well as JS/HTML/CSS. There is definitely a lot of room for improvement, but for my first project with these technologies I'm happy!
+
+## What would I do differently?
+
+Above I talked about what I learned and I mentioned there are a lot of things I could've done differently, so heres my list:
+1. Use Tailwind CSS
+2. Use TypeScript rather than JS
+3. Do a lot more with React's Router
