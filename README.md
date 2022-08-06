@@ -18,9 +18,8 @@ I feel like I learned a lot from this project, with it being my first time ever 
 1. JavaScript fundamentals
 2. Async functions in JS
 3. How grueling CSS can be
-4. HTML organization with divs
-5. React useEffect and useState
-6. Google Firebase basics
+4. React useEffect and useState
+5. Google Firebase basics
 
 ## What would I do differently?
 
