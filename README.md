@@ -14,7 +14,13 @@ I didn't know which cloud service I wanted to use for my back-end, but obviously
 
 ## What I leanred
 
-I feel like I learned a lot from this project, with it being my first time ever using React, as well as JS/HTML/CSS. There is definitely a lot of room for improvement, but for my first project with these technologies I'm happy!
+I feel like I learned a lot from this project, with it being my first time ever using React, as well as JS/HTML/CSS. 
+1. JavaScript fundamentals
+2. Async functions in JS
+3. How grueling CSS can be
+4. HTML organization with divs
+5. React useEffect and useState
+6. Google Firebase basics
 
 ## What would I do differently?
 
