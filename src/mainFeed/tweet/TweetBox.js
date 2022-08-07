@@ -5,8 +5,6 @@ import { Button } from '@mui/material';
 import { Avatar } from '@mui/material';
 import db from '../firebase';
 import { addDoc, collection, onSnapshot, orderBy, query, serverTimestamp } from "firebase/firestore"; 
-import {auth} from '../firebase';
-import { getAuth } from 'firebase/auth';
 
 function TweetBox() {
   const [tweetMessage, sendTweetMessage] = useState("");
@@ -17,6 +15,7 @@ function TweetBox() {
     // const collectionRef = collection(db, "tweets");
     // const q = query(collectionRef, orderBy("timestamp", "desc"));
 
+    
     e.preventDefault();
     
       addDoc(collection(db, "tweets"), {
@@ -25,13 +24,15 @@ function TweetBox() {
       verified: true,
       text: tweetMessage,
       image: tweetImage,
-      avatar: "",
+      avatar: "https://pbs.twimg.com/media/E9sN5jzVUAUgYHn.png",
       timestamp: serverTimestamp()
 
     });
 
     sendTweetMessage("");
     sendTweetImage("");
+
+    db.collection('tweets').orderBy('time', 'desc');
 
   };
 
@@ -41,16 +42,16 @@ function TweetBox() {
     <div className="tweetBox">
         <form>
             <div className="tweetInput">
-            <div> <Avatar src={"avatar"}/>
+            <div> <Avatar src={"https://pbs.twimg.com/media/E9sN5jzVUAUgYHn.png"}/>
             </div>
                 <input
                 onChange={(e) => sendTweetMessage(e.target.value)}
-                 value={tweetMessage} placeholder="What's happening?" type="text"></input>
+                 value={tweetMessage} placeholder="What's happening?" type="text" maxLength={250}></input>
             </div>
             <PermMediaOutlinedIcon  className="mediaIcon"/>
-            <input value={tweetImage}
+            {/* <input value={tweetImage}
             onChange={(e) => sendTweetImage(e.target.value)}
-             className="imageURL" placeholder="Enter Image URL" type="text"></input>
+             className="imageURL" placeholder="Enter Image URL" type="text"></input> */}
 
             <Button onClick={sendTweet}
             type="submit"
@@ -61,8 +62,5 @@ function TweetBox() {
   );
 }
 
-export const reorder = () => {
-  db.collection('tweets').orderBy('timestamp');
-}
 
 export default TweetBox;

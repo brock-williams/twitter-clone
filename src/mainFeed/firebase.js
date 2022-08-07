@@ -21,14 +21,14 @@ export const auth = getAuth(app);
 const db = getFirestore(app);
 const provider = new GoogleAuthProvider()
 
- const signInGoogle= () => {
+ export const signInGoogle= () => {
   signInWithPopup(auth, provider)
   .then((result) => {
     const name = result.user.displayName;
     const email = result.user.email;
     const pfp = result.user.photoURL;
     const navigate = useNavigate();
-    navigate('/');
+    navigate('/home');
 
     
   }).catch((error) => console.log(error));

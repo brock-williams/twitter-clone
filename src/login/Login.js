@@ -33,12 +33,8 @@ function Login() {
       console.log(user)
       
       } catch (error) {
-        console.log(error.message);
+        alert(error.message);
       }
-  }
-
-  const logout = async () => {
-    await signOut(auth);
   }
 
 
@@ -48,12 +44,11 @@ function Login() {
       <div className='signInFunctions'>
         <TwitterIcon fontSize='large' className="loginTwitterIcon"/>
         <h1>
-          Log In to Brock's Twitter
+          Sign In to Brock's Twitter
         </h1>  
-        {/* <button type="button" onClick={signInGoogle}className="login-with-google-btn">
+        <button type="button" onClick={signInGoogle}className="login-with-google-btn">
         Continue with Google
-        </button> */}
-
+        </button>
         <div>
             <input className='loginEmail' placeholder='Enter Email' onChange={(event) => 
               {setLoginEmail(event.target.value);
@@ -65,7 +60,7 @@ function Login() {
               }}/>
         </div>
           <div className='loginDiv'>
-          <button type="button" onClick={login} className="loginButton">Login</button>
+          <button type="submit" onClick={login} className="loginButton">Login</button>
           </div>
             <div>
             <button className='createUserBtn' type="button" onClick={() => {

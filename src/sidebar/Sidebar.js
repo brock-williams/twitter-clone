@@ -9,7 +9,7 @@ import MailOutlinedIcon from '@mui/icons-material/MailOutlined';
 import BookmarkBorderOutlinedIcon from '@mui/icons-material/BookmarkBorderOutlined';
 import ListAltIcon from '@mui/icons-material/ListAlt';
 import PermIdentityIcon from '@mui/icons-material/PermIdentity';
-import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
+import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
 import { Button } from '@mui/material';
 import {auth} from '../mainFeed/firebase';
 import {signOut} from "firebase/auth";
@@ -29,14 +29,14 @@ function Sidebar() {
   return (
     <div className="sidebar">
         <TwitterIcon onClick={navigate('/home')} className="twitterIcon"/>
-        <SidebarProps text="Home" active Icon={HomeIcon} className="homeIcon"/>
+        <SidebarProps text="Home" Icon={HomeIcon} className="homeIcon"/>
         <SidebarProps text="Explore" Icon={TagIcon}/>
         <SidebarProps text="Notifications" Icon={NotificationsNoneIcon}/>
         <SidebarProps text="Messages" Icon={MailOutlinedIcon}/>
         <SidebarProps text="Bookmarks" Icon={BookmarkBorderOutlinedIcon}/>
         <SidebarProps text="Lists" Icon={ListAltIcon}/>
         <SidebarProps text="Profile" Icon={PermIdentityIcon}/>
-        <SidebarProps text="More" Icon={MoreHorizIcon}/>
+        <SidebarProps text="Settings" Icon={SettingsOutlinedIcon}/>
     
         <Button variant="outlined" className="tweetButton" fullWidth>Tweet</Button>
         <Button variant="outlined" className="signOutBtn" fullWidth onClick={logout}>Sign Out</Button>

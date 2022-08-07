@@ -36,7 +36,7 @@ function MainFeed() {
       text={tweet.text}
       avatar={tweet.avatar}
       image={tweet.image}
-      time={tweet.time}
+      time={tweet.timestamp}
       /> 
       ))};
 
